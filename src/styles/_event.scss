@@ -1,17 +1,17 @@
 @use'variables';
 
 .event {
-    padding: 80px 0;
+    padding: 0px 0;
 
     &--sobre {
-        background-image: linear-gradient(variables.$blue1, variables.$blue2);
-    }
-
-    &--confirmacao {
-        background-image: linear-gradient(variables.$blue2, variables.$pink1);
+        background-image: linear-gradient(variables.$blue1, variables.$blue1);
     }
 
     &--atracoes {
+        background-image: linear-gradient(variables.$blue1, variables.$pink1);
+    }
+
+    &--confirmacao {
         background-image: linear-gradient(variables.$pink1, variables.$pink2);
     }
 
@@ -39,6 +39,28 @@
 }
 
 
+&__button {
+    background-color: variables.$pink3;
+    color: variables.$secondaryTextColor;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+   margin-left: 140px;
+
+    &:hover {
+        background-color: variables.$blue2;
+        color: variables.$textColor;
+        transform: scale(1.2);
+    }
+}
+    
+  
+
+
+
 &__detalhes {
     font-size: 18px;
     color: #fff;
@@ -47,6 +69,7 @@
     &__descricao {
         font-size: 17px;
         line-height: 26px;
+        margin-bottom: 30px;
 
 
     }
@@ -74,6 +97,12 @@
     &__detalhes {
         margin-right: 0;
         margin-bottom: 16px;
+    }
+
+    &__button {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
     }
 }
 }
