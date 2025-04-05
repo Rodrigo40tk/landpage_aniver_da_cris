@@ -1,0 +1,45 @@
+.hero {
+
+    background-image: url(../images/Apresentação\ mídia\ kit\ blogueira\ delicado\ rosa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+
+    &__title {
+        font-family: "Lobster", sans-serif;
+        margin-bottom: 50px;
+        font-size: 45px;
+        background: linear-gradient(90deg, #FFD700, #FFA500, #FF8C00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+
+    &__text {
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        line-height: 50px;
+
+
+
+    }
+
+    @media (max-width: 640px) {
+        padding-top: 50px;
+        background-image: url(../images/Apresentação\ mídia\ kit\ blogueira\ delicado\ rosa.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        clip-path: inset(0 0 0 0%);
+
+        &__text {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
