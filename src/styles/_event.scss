@@ -1,6 +1,7 @@
 @use'variables';
 
 .event {
+
     padding: 0px 0;
 
     &--sobre {
@@ -92,11 +93,13 @@
 
     &__image {
         width: 100%;
+        padding-right: 20px;
     }
 
     &__detalhes {
         margin-right: 0;
         margin-bottom: 16px;
+        padding-right: 20px;
     }
 
     &__button {
